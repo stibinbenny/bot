@@ -1,0 +1,16 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/opt/ros/noetic/lib/python3/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/opt/ros/noetic/lib/python3/dist-packages",
+        "./src/bumperbot_examples/src",
+        "./src/bumperbot_controller/src",
+        "./src/tf_spaces/src",
+        "./src/bumperbot_localization/src"
+    ],
+    "editor.fontSize": 10,
+    "cmake.sourceDirectory": "/home/stibin/bumperbot_ws/src/bumperbot_description",
+    "python.analysis.autoImportCompletions": true,
+    "python.analysis.typeCheckingMode": "basic"
+}

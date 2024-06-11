@@ -1,0 +1,8 @@
+prefix=/home/stibin/bumperbot_ws/devel
+
+Name: bringup
+Description: Description of bringup
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

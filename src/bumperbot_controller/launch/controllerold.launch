@@ -1,0 +1,17 @@
+<launch>
+      <arg name="wheel_radius"      default="0.033"/>
+      <arg name="wheel_separation"  default="0.17"/>
+      
+      <rosparam file="$(find bumperbot_controller)/config/simple_controller.yaml" command="load"/>
+      <rosparam file="$(find joint_state_controller)/joint_state_controller.yaml" command="load"/>
+
+      <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" 
+            respawn="false" output="screen"/>
+      <node name="controller_manager" pkg="controller_manager" type="spawner"
+                  respawn="false" output="screen" args="joint_state_controller wheel_left_controller wheel_right_controller" />
+      <node name="simple_controller_node" pkg="bumperbot_controller" type="simple_controller_node.py"
+                  output="screen" respawn="true">
+                 
+      </node>
+     
+</launch>

@@ -1,0 +1,2 @@
+bringup:bumperbot_controller:bumperbot_description:bumperbot_examples:bumperbot_localization:my_robot_model
+-DCATKIN_DEVEL_PREFIX=/home/stibin/bumperbot_ws/devel -DCMAKE_INSTALL_PREFIX=/home/stibin/bumperbot_ws/install -G Unix Makefiles
